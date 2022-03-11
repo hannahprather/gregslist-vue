@@ -38,7 +38,7 @@ export default {
     onMounted(async () => {
       try {
         // NOTE this first line is only to get rid of the previous car from showing up for half a second as we pick a new active car. not required to work.
-        AppState.activeCar = {};
+        // AppState.activeCar = {};
         logger.log(route.params);
         await carsService.getById(route.params.id);
       } catch (error) {
